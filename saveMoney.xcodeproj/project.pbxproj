@@ -13,6 +13,7 @@
 		D713C459219C71DF00BE0039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D713C457219C71DF00BE0039 /* Main.storyboard */; };
 		D713C45B219C71E100BE0039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D713C45A219C71E100BE0039 /* Assets.xcassets */; };
 		D713C45E219C71E100BE0039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D713C45C219C71E100BE0039 /* LaunchScreen.storyboard */; };
+		D72A44D121A5B67700296F34 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72A44D021A5B67700296F34 /* AddViewController.swift */; };
 		D7311BC3219F2CC700BED18E /* DadosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7311BC1219F2CC700BED18E /* DadosTableViewCell.swift */; };
 		D7311BC4219F2CC700BED18E /* DadosTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7311BC2219F2CC700BED18E /* DadosTableViewCell.xib */; };
 		D7311BC8219F3E4E00BED18E /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7311BC7219F3E4E00BED18E /* LocalStorage.swift */; };
@@ -29,6 +30,7 @@
 		D713C45A219C71E100BE0039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D713C45D219C71E100BE0039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D713C45F219C71E100BE0039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D72A44D021A5B67700296F34 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		D7311BC1219F2CC700BED18E /* DadosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DadosTableViewCell.swift; sourceTree = "<group>"; };
 		D7311BC2219F2CC700BED18E /* DadosTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DadosTableViewCell.xib; sourceTree = "<group>"; };
 		D7311BC7219F3E4E00BED18E /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				D713C455219C71DF00BE0039 /* TelaPrincipalViewController.swift */,
+				D72A44D021A5B67700296F34 /* AddViewController.swift */,
 			);
 			path = Modulos;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			files = (
 				D7E97503219C75CD00FB1170 /* DadoPrincipal.swift in Sources */,
 				D7311BC8219F3E4E00BED18E /* LocalStorage.swift in Sources */,
+				D72A44D121A5B67700296F34 /* AddViewController.swift in Sources */,
 				D7311BC3219F2CC700BED18E /* DadosTableViewCell.swift in Sources */,
 				D713C456219C71DF00BE0039 /* TelaPrincipalViewController.swift in Sources */,
 				D713C454219C71DF00BE0039 /* AppDelegate.swift in Sources */,
