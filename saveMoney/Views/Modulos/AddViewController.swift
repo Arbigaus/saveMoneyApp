@@ -15,6 +15,8 @@ class AddViewController: UIViewController {
     @IBOutlet weak var descricaoTextField: UITextField!
     @IBOutlet weak var valorTextField: UITextField!
     @IBOutlet weak var tagsTextField: UITextField!
+    @IBOutlet weak var dataTextField: UITextField!
+    @IBOutlet weak var recorrenciaTextField: UITextField!
     @IBOutlet weak var addTagButton: UIButton!
     @IBOutlet weak var saveDataButton: UIButton!
     @IBOutlet weak var tagContainerView: UIView!
@@ -35,13 +37,43 @@ class AddViewController: UIViewController {
             self.dado.tags.append(tagName)
             self.tagsTextField.text = ""
             
-            print(self.dado.tags)
+//            print(self.dado.tags)
         }
         
     }
     
     @IBAction func salvaDados(_ sender: Any) {
         //Verificar se os campos estao preenchidos
+        
+        if let descricao = descricaoTextField.text, !descricao.isEmpty{
+            self.dado.descricao = descricao
+            self.descricaoTextField.text = ""
+        } else {
+            print("Descricao invalida")
+        }
+        
+        if let valor = Float(valorTextField.text ?? ""){
+            self.dado.valor = valor
+            self.valorTextField.text = ""
+        } else {
+            print("Valor invalida")
+        }
+        
+        if let data = dataTextField.text, !data.isEmpty{
+            self.dado.data = data
+            self.dataTextField.text = ""
+        } else {
+            print("Data invalida")
+        }
+        
+        if let recorrencia = Int(recorrenciaTextField.text ?? "0") {
+            self.dado.recorrencia = recorrencia
+            self.recorrenciaTextField.text = ""
+        } else {
+            print("Recorrencia invalida")
+        }
+        
+        
         //em caso de algum campo estiver faltando, mostrar qual campo falta.
         //verificar se o array de tags esta vazio e avisar
         

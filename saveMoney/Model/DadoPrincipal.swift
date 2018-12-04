@@ -16,8 +16,9 @@ struct DadoPrincipal : Codable {
     var data : String
     var tipo: Bool // despesa /  receita
     var id : Int
+    var recorrencia : Int
     
-    init(descricao : String, tags : [String], valor : Float, data: String, id : Int, tipo: Bool) {
+    init(descricao : String, tags : [String], valor : Float, data: String, id : Int, tipo: Bool, recorrencia: Int) {
         
         self.descricao = descricao
         self.tags = tags
@@ -25,6 +26,7 @@ struct DadoPrincipal : Codable {
         self.data = data
         self.id = id
         self.tipo = tipo
+        self.recorrencia = recorrencia
     }
     
     init() {
@@ -35,6 +37,7 @@ struct DadoPrincipal : Codable {
         self.data = ""
         self.id = 0
         self.tipo = false
+        self.recorrencia = 0
         
     }
     
