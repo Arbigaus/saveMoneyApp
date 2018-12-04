@@ -44,33 +44,29 @@ class AddViewController: UIViewController {
     
     @IBAction func salvaDados(_ sender: Any) {
         //Verificar se os campos estao preenchidos
+        let valor = Float(valorTextField.text ?? "") ?? 0
+        let descricao = descricaoTextField.text ?? ""
+        let data = dataTextField.text ?? ""
+        let recorrencia = Int(recorrenciaTextField.text ?? "0") ?? 0
         
-        if let descricao = descricaoTextField.text, !descricao.isEmpty{
+        if descricao.isEmpty {
+            print("Descricao invalida")
+        } else if valor == 0 {
+            print("Valor invalido")
+            
+        } else if data.isEmpty {
+            print("Data invalida")
+        } else if recorrencia == 0 {
+            print("Recorrencia invalida")
+        } else {
             self.dado.descricao = descricao
             self.descricaoTextField.text = ""
-        } else {
-            print("Descricao invalida")
-        }
-        
-        if let valor = Float(valorTextField.text ?? ""){
             self.dado.valor = valor
             self.valorTextField.text = ""
-        } else {
-            print("Valor invalida")
-        }
-        
-        if let data = dataTextField.text, !data.isEmpty{
             self.dado.data = data
             self.dataTextField.text = ""
-        } else {
-            print("Data invalida")
-        }
-        
-        if let recorrencia = Int(recorrenciaTextField.text ?? "0") {
             self.dado.recorrencia = recorrencia
             self.recorrenciaTextField.text = ""
-        } else {
-            print("Recorrencia invalida")
         }
         
         
